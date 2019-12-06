@@ -1,5 +1,5 @@
 <script>
-  import { Router } from "svelte-filerouter";
+  import { Router } from "@sveltech/routify";
 </script>
 
 <Router />

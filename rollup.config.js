@@ -5,7 +5,6 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import autoPreprocess from 'svelte-preprocess';
-import { fileRouter } from 'svelte-filerouter'
 import alias from 'rollup-plugin-alias';
 import path from 'path'
 
@@ -26,7 +25,6 @@ export default {
                 { find: '@', replacement: path.resolve(__dirname + '/src') }
             ]
         }),
-        fileRouter({}),
         svelte({
             preprocess: autoPreprocess({
                 postcss: true
